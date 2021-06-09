@@ -1,0 +1,8 @@
+1623163333973	geckodriver	INFO	Listening on 127.0.0.1:64065
+1623163334727	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofileaoVMv4"
+1623163341736	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1623163345139	Marionette	INFO	Listening on port 64078
+1623163345154	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.vx.eventhive.com/site.ded82b1acc33f24dc93d.js, line 53: unreachable code after return statement
+1623163539272	Marionette	INFO	Stopped listening on port 64078
