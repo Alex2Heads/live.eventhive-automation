@@ -1,66 +1,156 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0 (Python 3.8.1 on darwin)" generated="20210609 10:22:31.757" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0 (Python 3.8.1 on darwin)" generated="20210610 12:03:34.440" rpa="false" schemaversion="2">
 <suite id="s1" name="Userlogin" source="/Users/alexo/live.eventhive-automation/test/Userlogin.robot">
 <test id="s1-t1" name="User login in EventHive event page">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://staging.vx.eventhive.com/demo-event/login firefox</arg>
+<arg>${url} ${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210609 10:22:33.040" level="INFO">Opening browser 'firefox' to base url 'https://staging.vx.eventhive.com/demo-event/login firefox'.</msg>
-<msg timestamp="20210609 10:22:33.052" level="INFO">Firefox driver log is always forced to to: /Users/alexo/live.eventhive-automation/results/geckodriver-17.log</msg>
-<status status="PASS" starttime="20210609 10:22:33.038" endtime="20210609 10:22:43.054"/>
+<msg timestamp="20210610 12:03:34.705" level="INFO">Opening browser 'firefox' to base url 'https://staging.vx.eventhive.com/demo-event/login Chrome'.</msg>
+<msg timestamp="20210610 12:03:34.707" level="INFO">Firefox driver log is always forced to to: /Users/alexo/live.eventhive-automation/results/geckodriver-1.log</msg>
+<status status="PASS" starttime="20210610 12:03:34.705" endtime="20210610 12:03:40.965"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>5s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210609 10:22:43.055" endtime="20210609 10:22:43.095"/>
+<status status="PASS" starttime="20210610 12:03:40.965" endtime="20210610 12:03:40.971"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>id=email</arg>
-<arg>guest1.demo@eventhive.dev</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210609 10:22:43.097" level="INFO">Typing text 'guest1.demo@eventhive.dev' into text field 'id=email'.</msg>
-<status status="PASS" starttime="20210609 10:22:43.096" endtime="20210609 10:22:43.218"/>
+<msg timestamp="20210610 12:03:40.972" level="FAIL">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" starttime="20210610 12:03:40.972" endtime="20210610 12:03:40.972"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>id=password</arg>
-<arg>password</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20210609 10:22:43.222" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg timestamp="20210609 10:22:43.247" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20210609 10:22:43.281" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20210609 10:22:43.220" endtime="20210609 10:22:43.281"/>
+<status status="NOT RUN" starttime="20210610 12:03:40.973" endtime="20210610 12:03:40.973"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>class:onboarding-form__next-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210609 10:22:43.283" level="INFO">Clicking element 'class:onboarding-form__next-button'.</msg>
-<status status="PASS" starttime="20210609 10:22:43.282" endtime="20210609 10:22:45.257"/>
+<status status="NOT RUN" starttime="20210610 12:03:40.973" endtime="20210610 12:03:40.974"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>15s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210609 10:22:45.257" endtime="20210609 10:22:45.276"/>
+<status status="NOT RUN" starttime="20210610 12:03:40.974" endtime="20210610 12:03:40.974"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20210609 10:22:45.276" endtime="20210609 10:22:47.363"/>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210610 12:03:40.975" endtime="20210610 12:03:41.899"/>
 </kw>
 <doc>Eventhive VX event page user login</doc>
 <tag>Smoke</tag>
-<status status="PASS" starttime="20210609 10:22:33.036" endtime="20210609 10:22:47.364"/>
+<status status="FAIL" starttime="20210610 12:03:34.703" endtime="20210610 12:03:41.900">Keyword 'SeleniumLibrary.Input Text' expected 2 to 3 arguments, got 1.</status>
+</test>
+<test id="s1-t2" name="Invalid Login">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://staging.vx.eventhive.com/demo-event/login Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210610 12:03:41.902" level="INFO">Opening browser 'firefox' to base url 'https://staging.vx.eventhive.com/demo-event/login Chrome'.</msg>
+<msg timestamp="20210610 12:03:41.903" level="INFO">Firefox driver log is always forced to to: /Users/alexo/live.eventhive-automation/results/geckodriver-2.log</msg>
+<status status="PASS" starttime="20210610 12:03:41.902" endtime="20210610 12:03:47.367"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210610 12:03:47.368" endtime="20210610 12:03:47.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210610 12:03:47.390" level="INFO">Typing text 'username1' into text field 'id=email'.</msg>
+<status status="PASS" starttime="20210610 12:03:47.388" endtime="20210610 12:03:47.458"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210610 12:03:47.460" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg timestamp="20210610 12:03:47.473" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20210610 12:03:47.497" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20210610 12:03:47.459" endtime="20210610 12:03:47.497"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>class:onboarding-form__next-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210610 12:03:47.498" level="INFO">Clicking element 'class:onboarding-form__next-button'.</msg>
+<status status="PASS" starttime="20210610 12:03:47.497" endtime="20210610 12:03:47.985"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210610 12:03:47.986" endtime="20210610 12:03:47.993"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210610 12:03:47.994" endtime="20210610 12:03:48.892"/>
+</kw>
+<status status="PASS" starttime="20210610 12:03:41.901" endtime="20210610 12:03:48.892"/>
+</test>
+<test id="s1-t3" name="Enter Invalid Password">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=password</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210610 12:03:48.896" level="INFO">Typing password into text field 'id=password'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210610 12:03:48.897" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210610 12:03:48.896" endtime="20210610 12:03:48.897"/>
+</kw>
+<msg timestamp="20210610 12:03:48.902" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20210610 12:03:48.895" endtime="20210610 12:03:48.902"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Entered wrong password</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210610 12:03:48.902" endtime="20210610 12:03:48.902"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210610 12:03:48.903" endtime="20210610 12:03:48.903"/>
+</kw>
+<status status="FAIL" starttime="20210610 12:03:48.893" endtime="20210610 12:03:48.904">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Enter Invalid Username">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id=email</arg>
+<arg>${username}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20210610 12:03:48.907" level="INFO">Typing password into text field 'id=email'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210610 12:03:48.908" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20210610 12:03:48.907" endtime="20210610 12:03:48.908"/>
+</kw>
+<msg timestamp="20210610 12:03:48.909" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20210610 12:03:48.906" endtime="20210610 12:03:48.909"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Entered wrong username</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210610 12:03:48.909" endtime="20210610 12:03:48.909"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20210610 12:03:48.910" endtime="20210610 12:03:48.911"/>
+</kw>
+<status status="FAIL" starttime="20210610 12:03:48.905" endtime="20210610 12:03:48.911">No browser is open.</status>
 </test>
 <doc>Eventhive VX event page user login</doc>
-<status status="PASS" starttime="20210609 10:22:31.767" endtime="20210609 10:22:47.367"/>
+<status status="FAIL" starttime="20210610 12:03:34.442" endtime="20210610 12:03:48.913"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="3" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Userlogin">Userlogin</stat>
+<stat pass="1" fail="3" skip="0" id="s1" name="Userlogin">Userlogin</stat>
 </suite>
 </statistics>
 <errors>

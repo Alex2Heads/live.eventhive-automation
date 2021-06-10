@@ -1,9 +1,0 @@
-1623229616534	geckodriver	INFO	Listening on 127.0.0.1:53342
-1623229616572	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofilewLBndY"
-1623229631195	Marionette	INFO	Marionette enabled
-console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofilewLBndY/search.json.mozlz4", (void 0)))
-1623229636949	Marionette	INFO	Listening on port 53347
-1623229659404	Marionette	INFO	Stopped listening on port 53347
-
-###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
-
