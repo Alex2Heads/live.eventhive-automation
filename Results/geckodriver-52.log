@@ -1,0 +1,8 @@
+1623338164082	geckodriver	INFO	Listening on 127.0.0.1:54509
+1623338165100	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofileIJlHCm"
+1623338165679	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofileIJlHCm/search.json.mozlz4", (void 0)))
+1623338167925	Marionette	INFO	Listening on port 54534
+1623338168029	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.vx.eventhive.com/site.61cfd850312615af6560.js, line 53: unreachable code after return statement
+1623338170444	Marionette	INFO	Stopped listening on port 54534
