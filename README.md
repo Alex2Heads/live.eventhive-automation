@@ -2,7 +2,7 @@
 
 Installation Steps
 
-* Install Python & PIP
+* Install Python & PIP (add to your PATH)
 * Use PIP to install Robot Framework
 * Use PIP to install SeleniumLibrary
 * Select & install desired browser versions
