@@ -1,0 +1,14 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.UserViewLiveStream :: Eventhive VX user view live stream               
+==============================================================================
+User login in EventHive View Live Stream Page :: Eventhive VX user... | PASS |
+------------------------------------------------------------------------------
+Suites.UserViewLiveStream :: Eventhive VX user view live stream       | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/alexo/live.eventhive-automation/pabot_results/0/output.xml

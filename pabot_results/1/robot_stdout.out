@@ -1,0 +1,28 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Userlogin :: Eventhive VX event page user login                        
+==============================================================================
+User login in EventHive event page :: Eventhive VX event page user... | PASS |
+------------------------------------------------------------------------------
+Invalid Login invalid                                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/alexo/live.eventhive-automation/test/Userlogin.robot:37
+    T:  Invalid Login invalid    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/alexo/live.eventhive-automation/test/Userlogin.robot:44
+      Run Keyword If    '${password}' ==    'FAIL'    Log ${error}
+      |  '${password}' == = 'password!' == (str)
+      |  Log ${error} = Log Error (str)
+______________________________________________________________________________
+| FAIL |
+Evaluating expression ''password!' ==' failed: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+------------------------------------------------------------------------------
+Suites.Userlogin :: Eventhive VX event page user login                | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  /Users/alexo/live.eventhive-automation/pabot_results/1/output.xml

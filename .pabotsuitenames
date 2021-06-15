@@ -1,0 +1,6 @@
+datasources:b5fac23fd94594bc1a24be82dc45bacdc0218926
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:fda77d24e6fd43b786eb7b710768386efe9483eb
+--suite Suites.UserViewLiveStream
+--suite Suites.Userlogin
