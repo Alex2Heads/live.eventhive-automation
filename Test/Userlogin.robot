@@ -19,8 +19,8 @@ User login in EventHive event page
     [Tags]  Smoke
     Open Browser  ${URL} ${BROWSER}
     Set Selenium Implicit Wait    10s
-    Input Text  id=email  
-    Input Password  id=password
+    Input Text  id=email  guest1.demo@eventhive.dev
+    Input Password  id=password  password
     Click Element   class:onboarding-form__next-button
     Wait Until Page Contains  Currently no event scheduled
     Set Selenium Implicit Wait    15s

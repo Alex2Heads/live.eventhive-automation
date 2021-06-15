@@ -1,0 +1,17 @@
+1623747018364	geckodriver	INFO	Listening on 127.0.0.1:50777
+1623747018388	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofilejz7SAe"
+1623747019327	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/1_/5m4138gx1434kz2c1f3qnb7h0000gp/T/rust_mozprofilejz7SAe/search.json.mozlz4", (void 0)))
+1623747021870	Marionette	INFO	Listening on port 50782
+1623747021984	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://assets.vx.eventhive.com/site.13d018d36fa64cf21cde.js, line 53: unreachable code after return statement
+JavaScript warning: https://assets.vx.eventhive.com/site.13d018d36fa64cf21cde.js, line 53: unreachable code after return statement
+JavaScript warning: https://assets.vx.eventhive.com/site.13d018d36fa64cf21cde.js, line 53: unreachable code after return statement
+JavaScript warning: https://assets.vx.eventhive.com/site.13d018d36fa64cf21cde.js, line 53: unreachable code after return statement
+1623747025323	Marionette	INFO	Stopped listening on port 50782
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
