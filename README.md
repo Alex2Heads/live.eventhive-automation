@@ -2,6 +2,7 @@
 
 Installation Steps
 
+* Virtualenv venv - source venv/bin/activate
 * PIP install requirement.txt -   pip install -r requirement.txt
 * PIP install robot framework - pip install robotframework
 * PIP install robotframework-selenium - pip install robotframework-seleniumlibrary
